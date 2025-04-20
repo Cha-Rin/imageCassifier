@@ -24,7 +24,7 @@ upload_file = st.file_uploader("Upload image:",type=["jpg","jpeg", "png"])
 
 if upload_file is not None:
     # Get the first uploaded file's content
-    img = Image.opan(upload_file)
+    img = Image.open(upload_file)
     st.image(img, caption="Uploade image")
   
     # Preprocess the image
